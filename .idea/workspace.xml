@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="APCS" targetName="hello" />
+      <config projectName="APCS" targetName="fahrenheit" />
+      <config projectName="APCS" targetName="isbn" />
+      <config projectName="APCS" targetName="pennies" />
+      <config projectName="APCS" targetName="cs50_lib" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="111a02e3-b9c4-4245-a33e-d264505d4759" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter1/fahrenheit/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter1/hello/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter1/isbn/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter1/pennies/CMakeLists.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="32kta6sc" />
+  </component>
+  <component name="ProjectId" id="1gbxNKGrgJKj7aTL7haUDZg4Krs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chapter1/pennies" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\draven\git\apcs\chapter1\pennies" />
+      <recent name="C:\Users\draven\git\apcs\chapter1\isbn" />
+      <recent name="C:\Users\draven\git\apcs\chapter1\hello" />
+      <recent name="C:\Users\draven\git\apcs\chapter1\fahrenheit" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\draven\git\apcs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.cs50_lib">
+    <configuration name="APCS" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cs50_lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="APCS" TARGET_NAME="cs50_lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fahrenheit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="APCS" TARGET_NAME="fahrenheit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="APCS" RUN_TARGET_NAME="fahrenheit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hello" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="APCS" TARGET_NAME="hello" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="APCS" RUN_TARGET_NAME="hello">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="isbn" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="APCS" TARGET_NAME="isbn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="APCS" RUN_TARGET_NAME="isbn">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pennies" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="APCS" TARGET_NAME="pennies" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="APCS" RUN_TARGET_NAME="pennies">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.APCS" />
+      <item itemvalue="CMake Application.cs50_lib" />
+      <item itemvalue="CMake Application.fahrenheit" />
+      <item itemvalue="CMake Application.hello" />
+      <item itemvalue="CMake Application.isbn" />
+      <item itemvalue="CMake Application.pennies" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="111a02e3-b9c4-4245-a33e-d264505d4759" name="Default Changelist" comment="" />
+      <created>1598397052813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598397052813</updated>
+      <workItem from="1598397054491" duration="323000" />
+      <workItem from="1598397387761" duration="17000" />
+      <workItem from="1598397406392" duration="1280000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598397360707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397360707" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598397401807">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397401807" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1598397952084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397952084" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1598397221640">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397221640" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598397152904">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.166.1680.1010/1920.166.1680.1010@0.0.1920.1040" timestamp="1598397152904" />
+  </component>
+</project>

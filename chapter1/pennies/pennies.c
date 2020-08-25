@@ -14,18 +14,16 @@ int main(void)
     while (true)
     {
         // get input from user
-        int input = get_int("Days in month: ");
+        days = get_int("Days in month: ");
 
         // if we're in debug mode don't check if the input is valid
 #ifdef DEBUG
-        days = input;
         break;
 #endif
 
         // check if the input is valid
-        if (input >= 28 && input <= 31)
+        if (days >= 28 && days <= 31)
         {
-            days = input;
             break;
         }
 
