@@ -8,3 +8,10 @@ cd build
 cmake ..
 make (project name)
 ```
+
+## Automated testing using `check50`
+Note: you need to compile using the commands above before you test
+```bash
+cd build
+ctest -j8
+```
