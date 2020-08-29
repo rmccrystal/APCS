@@ -10,7 +10,9 @@ int main(void)
     {
         height = get_int("Height: ");
         if (height > 0 && height <= 8)
+        {
             break;
+        }
     }
     generateMarioTower(height);
 }

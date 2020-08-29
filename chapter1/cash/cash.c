@@ -17,7 +17,9 @@ int main(void)
     {
         dollars = get_float("Change owed: ");
         if (dollars > 0)
+        {
             break;
+        }
     }
 
     float cents = roundf(dollars * 100);
@@ -50,7 +52,8 @@ int calculateChangeCoins(int totalCents, const int *coinAmounts, size_t coinAmou
         {
             coinsUsed++;
             amount += coinAmounts[index];
-        } else
+        }
+        else
         {
             index++;
 
