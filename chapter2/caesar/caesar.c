@@ -3,17 +3,25 @@
 #include <stdlib.h>
 #include <string.h>
 
+//#define DEBUG
+
 char *caesar(int key, char *text);
 
 int main(int argc, char *argv[])
 {
+    int key;
+
+#ifndef DEBUG
     if (argc != 2)
     {
         printf("Invalid syntax. Usage: ./caesar <key>\n");
         return 1;
     }
 
-    int key = atoi(argv[1]);
+    key = atoi(argv[1]);
+#else
+    key = 53;
+#endif
 
     char *text = get_string("plaintext: ");
 
@@ -34,21 +42,35 @@ char caesar_char(int key, char letter)
     if (letter >= 'a' && letter <= 'z')
     {
         min = 'a';
-        max = 'z';
+        max = 'z' + 1;
     }
-
-    if (letter >= 'A' && letter <= 'Z')
+    else if (letter >= 'A' && letter <= 'Z')
     {
         max = 'A';
-        min = 'Z';
+        min = 'Z' + 1;
     }
+    else
+    {
+        return letter;
+    }
+
+    key = key % (max - min);
 
     // Shift the `letter` by `key` characters, rolling over from `max` to `min`
-    for(int i = 0; i < key; i++) {
-//        if (letter > max)
+    char result;
+
+    // If adding would roll over
+    if ((letter + key) >= max)
+    {
+        // Set the result to how much the letter rolled over
+        result = min + ((letter + key) - max);
+    }
+    else
+    {
+        result = letter + key;
     }
 
-    return letter + key;
+    return result;
 }
 
 char *caesar(int key, char *text)
@@ -56,12 +78,16 @@ char *caesar(int key, char *text)
     int len = strlen(text);
 
     // Create a char buffer with length of text
-    char *buf = malloc(len * sizeof(char));
+    // + 1 for null terminator
+    char *buf = malloc(len * sizeof(char) + 1);
 
     for (int i = 0; i < len; i++)
     {
-        buf[i] = caesar_char(text[i]);
+        buf[i] = caesar_char(key, text[i]);
     }
+
+    // add null terminator
+    buf[len] = '\0';
 
     return buf;
 }
