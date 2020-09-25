@@ -12,4 +12,5 @@ n%a must not be zero for a in all numbers below n.
 
 ## Specification
 In `primes.c` in `~chapter1/primes`, write a program that prompts a user for a number n and then
-reports (via `printf`) a comma separated list of all primes below that number.
+reports (via `printf`) a comma separated list of all primes below that number. If the number given is not a whole number, 
+your program should ask for the input again.
