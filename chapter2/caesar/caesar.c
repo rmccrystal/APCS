@@ -46,8 +46,8 @@ char caesar_char(int key, char letter)
     }
     else if (letter >= 'A' && letter <= 'Z')
     {
-        max = 'A';
-        min = 'Z' + 1;
+        min = 'A';
+        max = 'Z' + 1;
     }
     else
     {
