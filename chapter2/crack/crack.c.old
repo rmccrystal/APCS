@@ -1,0 +1,124 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+// if we're compiling on apple, use the unistd library and use crypt.h
+// if we're not on apple
+#ifdef __APPLE__
+
+#include <unistd.h>
+
+#else
+#include <crypt.h>
+#endif
+
+bool check(char *hashed, char *password)
+{
+    return strcmp(crypt(password, "50"), hashed) == 0;
+}
+
+// This function will crack the hashed password using characters from
+// `alphabet` starting at length 1 and increasing until the password is found.
+// if the length of the attempted passwords is greater than `max_len`, the function
+// will return NULL
+char *crack(char *hashed, char alphabet[], int max_len)
+{
+    unsigned long alphabet_len = strlen(alphabet);
+
+    // the password represented as indexes of the `alphabet`
+    // if an index is -1, it will be treated as a null terminator
+    int *indexes = (int*)malloc(max_len * sizeof(int));
+    // init indexes to -1
+    for(int i = 0; i < max_len; ++i) {
+        indexes[i] = -1;
+    }
+
+    // create a buffer for the password (this should be zeroed)
+    char *password = calloc(max_len, sizeof(char) + 1);
+
+    // the last non -1 index in indexes
+    int last_index = 0;
+
+    while (true)
+    {
+        // "increment" the password by one
+        // (ex. a ... z -> aa -> ab -> ac ... az -> ba .. zz -> aaa -> aab)
+        indexes[last_index]++;
+        if (indexes[last_index] > max_len)
+        {
+            for (int i = last_index - 1;; --i)
+            {
+                // if we get to the first element, add a new letter or return because there are none left
+                if (i == 0)
+                {
+                    if (last_index + 1 >= max_len)
+                    {
+                        // we cannot increment because there is no space left for a new number
+                        return NULL;
+                    }
+                    // increase the length by 1
+
+                    last_index++;
+                    // reset the indexes
+                    for (int j = 0; j < last_index; ++j)
+                    {
+                        indexes[j] = 0;
+                    }
+                }
+
+                // increment the next lower index
+                indexes[i]++;
+                if(indexes[i] > max_len) {
+                    continue;
+                } else {
+                    break;
+                }
+            }
+        }
+
+        // TODO: This could probably be more efficient if I dropped the `check` function
+        // and instead checked the new password with this for loop?
+
+        // copy `indexes` to `password`
+        for (int i = 0; i < max_len - 1; i++)
+        {
+            if (indexes[i] == -1)
+            {
+                password[i] = '\0';
+            } else
+            {
+                password[i] = alphabet[indexes[i]];
+            }
+        }
+        printf("%s", password);
+//        if (check(hashed, password))
+//        {
+//            return password;
+//        }
+    }
+
+    return NULL;
+}
+
+int main(int argc, char *argv[])
+{
+    printf("%s", crypt("bb", "50"));
+    if (argc != 2)
+    {
+        printf("Usage: ./crack <hash>\n");
+        return 1;
+    }
+
+    char *hashed = argv[1];
+
+    char *password = crack(hashed, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ", 10);
+
+    if (password == NULL)
+    {
+        printf("could not decrypt\n");
+        return 1;
+    }
+
+    printf("%s\n", password);
+}
