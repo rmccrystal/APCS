@@ -53,3 +53,5 @@ ADD_CHAPTER(${CMAKE_CURRENT_SOURCE_DIR}/chapter2)
 ADD_C_FILE(${CMAKE_CURRENT_SOURCE_DIR}/chapter2/friends/hello.c friends_hello)
 ADD_C_FILE(${CMAKE_CURRENT_SOURCE_DIR}/chapter2/friends/fahrenheit.c friends_fahrenheit)
 ADD_C_FILE(${CMAKE_CURRENT_SOURCE_DIR}/chapter2/friends/pennies.c friends_pennies)
+
+ADD_CHAPTER(${CMAKE_CURRENT_SOURCE_DIR}/chapter3)
